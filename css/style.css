@@ -1,0 +1,11 @@
+.hero{
+    background-image: url(/img/istockphoto-924476838-612x612.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; 
+    background-position: center;
+    margin-bottom: 2em; 
+
+}
