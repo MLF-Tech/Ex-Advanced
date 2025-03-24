@@ -24,3 +24,7 @@ menu.forEach(function (value, index) {
 // let coffees: string[] = ["Espresso", "Cappuccino", "Specialty Brews"];
 //We could also use a mixed array for the let ones to show the prices, for example:
 //let appetizers:Array<string | number> = ["Bruschetta", 10, "Tagesuppe", 5, "Tagliere di formaggi", 15]
+
+$('.carousel').carousel({
+    interval: 2000
+  })

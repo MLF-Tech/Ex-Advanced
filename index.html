@@ -65,6 +65,141 @@
           <div class="h1">A Feast of Friendship and Flavor</div>
         </div>
       </div>
+
+      <!-- The rest of the exercise says: It is up to you how the front-end part will look like. It will be nice if you
+provide a well structured and designed Bootstrap page.
+Your task is to incorporate all these features using Typescript in a proper
+and meaningful place in your App. More dynamic data is always welcome.
+Feel free to add additional functionalities. -->
+      <!-- I would love to try again the carousel, if you don't mind. Just onece, if we cannot make it work, we use just the slides. Promise! :D -->
+
+      <!-- Bootstrap carousel -->
+      <!-- Adding indicators -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="4"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="5"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="6"
+          ></li>
+        </ol>
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block mx-auto w-50"
+              src="/img/appetizers-6281830_1280.jpg"
+              alt="First slide"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Appetizers</h5>
+              <p>Delight in a fusion of Viennese charm and Italian flavors.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block mx-auto w-50"
+              src="/img/maincourse_tagliatelle-1632153_1280.jpg"
+              alt="Second slide"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Main Course</h5>
+              <p>Savor the heart of Italy with our exquisite main courses.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block mx-auto w-50"
+              src="img/second course_schnitzerl.jpeg"
+              alt="Third slide"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second Course</h5>
+              <p>Indulge in our expertly prepared second courses.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block mx-auto w-50"
+              src="img/cookies-4053771_1280.jpg"
+              alt="Forth slide"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Desserts</h5>
+              <p>End on a sweet note with our irresistible desserts.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block mx-auto w-50"
+              src="img/beverages.jpeg"
+              alt="Fifth slide"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Beverages</h5>
+              <p>Complement your meal with our selection of fine drinks.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block mx-auto w-50"
+              src="img/coffee.jpeg"
+              alt="Sixth slide"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Coffee</h5>
+              <p>Experience true Italian coffee culture.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Adding controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </main>
 
     <!-- footer -->
@@ -85,13 +220,13 @@
       </ul>
     </footer>
 
-    <!-- bootstrap js -->
+    <!-- bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <!-- js -->
+    <!-- JS -->
     <!-- Here it was the error: we put "/js/script.js" instead of /ts/script.js and it could not find the file, obviously. -->
     <script src="/ts/script.js"></script>
   </body>
