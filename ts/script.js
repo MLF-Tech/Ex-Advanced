@@ -1,7 +1,3 @@
 "use strict";
-
-
-$('.carousel').carousel({
-    interval: 2000
-  })
-
+let menu = ["Appetizers", "Main Course", "Second Course", "Desserts", "Beverages", "Coffee"];
+console.log(menu);
