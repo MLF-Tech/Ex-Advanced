@@ -37,6 +37,25 @@ console.log(txt2);
 
 
 
+// COMM JULIA: wanted to try to display it directly on the webpage too; we do not have to keep it; can command it out too. :) because it doesn't look really nice and doesn't make a lot of sense there ... 
+
+
+const outputElement = document.getElementById("output");
+
+
+// outputElement?.innerHTML = txt2; 
+// COMM JULIA: this way does not work for displaying the data. i think it has something to do when the HTML is loaded, the DOM  is available and when the javascript is executed. not really sure. because actually it should work as we have our script-tag at the bottom of the body. 
+
+// found the workaround with the if else statement and now the text is displayed; but not sure if this is good practice ... 
+
+if (outputElement) {
+    outputElement.innerHTML = txt2; 
+} else {
+    console.error("Element with ID 'output' not found.");
+}
+
+
+
 
 // Define some appropriate value as const:
 // At this point I would suggest to call menu as const and then create variables (let) for each course, like this:

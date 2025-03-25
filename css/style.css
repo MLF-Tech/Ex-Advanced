@@ -6,7 +6,7 @@
     align-items: center;
     min-height: 300px; 
     background-position: center;
-    margin-bottom: 2em; 
+    margin-bottom: 1em; 
 
 }
 
@@ -25,4 +25,14 @@
 
   footer li {
     display: inline;
+  }
+
+
+  /* styled the div OUTPUT a bit */
+  #output {
+    text-align: center;
+    padding: 10px;
+    color: grey; 
+
+
   }
