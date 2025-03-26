@@ -22,21 +22,21 @@ console.log(txt1);
 
 let txt2: string = "";
 for (const men of menu) {
-    txt2 +=  men + " ";
-}
-console.log(txt2);
+    txt2 += `<div class="col-md-4"><div class="card"><div class="card-body"><h5 class="card-title">${men}</h5></div></div></div>`
+    ;}
+//console.log(txt2);
 
 
-// Display the data in the browser
-const outputElement = document.getElementById("output");
+// // Display the data in the browser
+// const outputElement = document.getElementById("output");
     
-// outputElement?.innerHTML = txt2;
+// // outputElement?.innerHTML = txt2;
 
-if (outputElement) {
-    outputElement.innerHTML = txt2; 
-} else {
-    console.error("Element with ID 'output' not found.");
-}
+// if (outputElement) {
+//     outputElement.innerHTML = txt2; 
+// } else {
+//     console.error("Element with ID 'output' not found.");
+// }
 
 // Definition of subcategories with let
 // let appetizers: string[] = ["Bruschetta", "Tagesuppe", "Tagliere di formaggi"];

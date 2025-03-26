@@ -18,18 +18,17 @@ console.log(txt1);
 //for.of
 let txt2 = "";
 for (const men of menu) {
-    txt2 += men + " ";
+    txt2 += `<div class="col-md-4"><div class="card"><div class="card-body"><h5 class="card-title">${men}</h5></div></div></div>`;
 }
-console.log(txt2);
-// Display the data in the browser
-const outputElement = document.getElementById("output");
-// outputElement?.innerHTML = txt2;
-if (outputElement) {
-    outputElement.innerHTML = txt2;
-}
-else {
-    console.error("Element with ID 'output' not found.");
-}
+//console.log(txt2);
+// // Display the data in the browser
+// const outputElement = document.getElementById("output");
+// // outputElement?.innerHTML = txt2;
+// if (outputElement) {
+//     outputElement.innerHTML = txt2; 
+// } else {
+//     console.error("Element with ID 'output' not found.");
+// }
 // Definition of subcategories with let
 // let appetizers: string[] = ["Bruschetta", "Tagesuppe", "Tagliere di formaggi"];
 // let mainCourses: string[] = ["Pasta Carbonara", "Pizza Margherita", "Osso Buco"];
