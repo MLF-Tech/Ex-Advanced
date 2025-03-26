@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advanced exercise</title>
 
-    <!--Add a favicon :) -->
+    <!--Added a favicon :) -->
     <link
       rel="shortcut icon"
       href="/img/balloon-heart.svg"
@@ -74,18 +74,64 @@
         </div>
       </div>
 
+    <!-- Display cards here -->
+      <div class="container mt-4">
+         <div class="row" id="card-container">
+         <!-- Cards will be dynamically inserted here by JavaScript -->
+         </div>
+      </div>
+
+
       <!-- Display here the data of the for of loop -->
       <div id="output"></div>
 
+
+      <!-- Bootstrap Carousel -->
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+      
+        <!-- Carousel Items (Slides) -->
+        <div class="carousel-inner" id="carouselSlides">
+          <!-- Your TypeScript will populate this part with slides -->
+        </div>
+      
+        <!-- Carousel Controls -->
+        <!-- Previous Button -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+      
+        <!-- Next Button -->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+
+
+
+
+<!-- COMM JULIA: I think we can delete this part of code now as the data is displayed dynamically. -->
+
       <!-- Bootstrap carousel -->
       <!-- Adding indicators -->
-      <div
+      <!-- <div
         id="carouselExampleIndicators"
         class="carousel slide"
         data-bs-ride="carousel"
-      >
+      > -->
         <!-- Slides -->
-        <div class="carousel-inner">
+        <!-- <div class="carousel-inner">
           <div class="carousel-item active">
             <img
               class="d-block mx-auto w-60"
@@ -160,9 +206,9 @@
               <p class="h3">Experience true Italian coffee culture.</p>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- Adding controls -->
-        <button
+        <!-- <button
           class="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleIndicators"
@@ -180,7 +226,7 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+      </div> -->
     </main>
 
     <!-- footer -->
