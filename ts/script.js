@@ -75,6 +75,9 @@ menuCategories.forEach((category) => {
 if (cardContainer) {
     cardContainer.innerHTML = cardHTML;
 }
+else {
+    console.error("Element with class 'carousel-inner' not found.");
+}
 // APPROACH 2: Displaying via Bootstrap slides
 // this feels way more complicated and complex. slides are displayed but the indicators and controlls are not; think they have to be added dynamically via typescript too;
 // Get the carousel inner container element

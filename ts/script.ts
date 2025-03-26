@@ -117,7 +117,9 @@ interface MenuCategory {
   // Insert the cards into the card container
   if (cardContainer) {
     cardContainer.innerHTML = cardHTML;
-  }
+} else {
+    console.error("Element with class 'carousel-inner' not found.");
+}
   
 
 
