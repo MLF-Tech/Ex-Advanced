@@ -85,10 +85,9 @@ const carouselInner = document.querySelector('.carousel-inner');
 // Initialize the carousel items
 let carouselItems = '';
 // Loop through the array and create the carousel items
-menuCategories.forEach((category, index) => {
-    const isActive = index === 0 ? 'active' : ''; // Set the first item as active
+menuCategories.forEach((category) => {
     carouselItems += `
-        <div class="carousel-item ${isActive}">
+        <div class="carousel-item active">
             <img class="d-block mx-auto w-60" src="${category.img}" alt="${category.title}">
             <div class="carousel-caption d-none d-md-block">
                 <h2 class="display-5">${category.title}</h2>
